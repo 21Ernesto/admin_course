@@ -1,0 +1,15 @@
+<div id="kt_toolbar_container" [ngClass]="toolbarContainerCssClasses" class="d-flex flex-stack">
+  <app-page-title #ktPageTitle class="page-title d-flex" [ngClass]="pageTitleCssClasses"></app-page-title>
+
+  <div class="d-flex align-items-center py-1">
+    <div class="me-4">
+      <div class="d-flex align-items-center" [ngClass]="toolbarButtonMarginClass" id="kt_header_user_menu_toggle">
+        <div class="cursor-pointer symbol" [ngClass]="toolbarUserAvatarHeightClass" data-kt-menu-trigger="click"
+          data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end" data-kt-menu-flip="bottom">
+          <img src="./assets/media/avatars/300-1.jpg" alt="metronic" />
+        </div>
+        <app-user-inner></app-user-inner>
+      </div>
+    </div>
+  </div>
+</div>
